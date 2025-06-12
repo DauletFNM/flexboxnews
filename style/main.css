@@ -1,0 +1,51 @@
+body{
+    background-color: darkgrey;
+}
+#main{
+    flex: 2;
+    flex-direction: column;
+    border: solid;
+    border-color: aqua;
+}
+img{
+    width: 30%;
+}
+#newsfeed{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#side{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#second{
+    border: solid;
+    border-color: aqua;
+}
+#third{
+    border: solid;
+    border-color:aqua;
+}
+@media (max-width: 800px) {
+  #newsfeed {
+    flex-direction: column;
+  }
+
+  #side {
+    flex-direction: row;
+  }
+
+  #second, #third {
+    flex: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  #side {
+    flex-direction: column;
+  }
+}
